@@ -1,0 +1,26 @@
+using System;
+
+namespace Programa8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int  num,a=-2,o=-3,q=0;
+            Console.WriteLine("Ingrese Numero");
+            num = int.Parse(Console.ReadLine());
+            if (num > 0)
+            {
+                for (int i = 0; i <= num; i++)
+                {
+                    Console.WriteLine("{0}>>>>>{1}<<<<<{2}", q++, a = a + 2, o = o + 3);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Numero no Aceptado");
+            }                
+            Console.ReadLine();            
+        }
+    }
+}
