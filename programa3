@@ -1,0 +1,34 @@
+using System;
+
+namespace programa2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int tam;
+            Console.WriteLine("Ingrese el tamaño del cuadrado");
+            tam = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < tam; i++){
+                Console.Write("*");
+            }
+            Console.WriteLine();
+            for (int i = 0; i < tam-2; i++)
+            {
+                Console.Write("*");
+                for (int h = 0; h < tam-2 ; h++)
+                {
+                    Console.Write(" ");
+                }
+                Console.WriteLine("*");
+            }
+            for (int i = 0; i < tam; i++)
+            {
+                Console.Write("*");              
+            }
+            Console.ReadLine();
+        }
+    
+    }
+}
