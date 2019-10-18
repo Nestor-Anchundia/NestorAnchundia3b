@@ -1,0 +1,21 @@
+using System;
+
+namespace Programa9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int c = 0, num , mul; 
+            Console.WriteLine("Ingrese numero número de cual desee la tabla ");
+            num = int.Parse(Console.ReadLine());
+            do
+            {
+                c++;
+                mul = num * c;
+                Console.WriteLine("La multimplicacion de {0}x{1} ={2} " ,c,num,mul);
+            } while (c<15);
+            Console.ReadLine();
+        }
+    }
+}
